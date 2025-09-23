@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聖鈦機電工程</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 導覽列 -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">🏢 聖鈦機電工程有限公司</div>
+            <div class="menu-toggle">☰</div>
+            <ul class="nav-links">
+                <li><a href="#services">服務項目</a></li>
+                <li><a href="#contact">連絡我們</a></li>
+                <li><a href="#home">回首頁</a></li>
+                <li><a href="login.html">員工專區</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 首頁 -->
+    <!-- 首頁 -->
+<section id="home" class="home-section">
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="img/img1.jpg" alt="公司照片1">
+        </div>
+        <div class="slide fade">
+            <img src="img/img2.jpg" alt="公司照片2">
+        </div>
+        <div class="slide fade">
+            <img src="img/img3.jpg" alt="公司照片3">
+        </div>
+
+        <!-- 左右箭頭 -->
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+
+    <!-- 點點指示器 -->
+    <div class="dot-container">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <h1 class="company-name">電力高低壓系統工程/儀錶控制系統工程/</h1>
+    <p class="intro-text">著重安全第一、團隊服務及品質優先。</p>
+</section>
+
+
+    <!-- 服務項目 -->
+    <!-- 服務項目 -->
+    <section id="services" class="services-section hidden">
+        <h2>服務項目</h2>
+        <div class="service-cards">
+            <div class="card hidden" data-modal="modalA">🔧 服務 A</div>
+            <div class="card hidden" data-modal="modalB">💡 服務 B</div>
+            <div class="card hidden" data-modal="modalC">📦 服務 C</div>
+        </div>
+    </section>
+
+    <!-- Modal 彈窗 -->
+    <div id="modalA" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>服務 A 詳細介紹</h2>
+            <p>這裡放置服務 A 的詳細內容，可以是文字、圖片或連結。</p>
+        </div>
+    </div>
+
+    <div id="modalB" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>服務 B 詳細介紹</h2>
+            <p>這裡放置服務 B 的詳細內容，可以是文字、圖片或連結。</p>
+        </div>
+    </div>
+
+    <div id="modalC" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>服務 C 詳細介紹</h2>
+            <p>這裡放置服務 C 的詳細內容，可以是文字、圖片或連結。</p>
+        </div>
+    </div>
+
+
+    <!-- 連絡我們 -->
+    <section id="contact" class="contact-section hidden">
+        <h2>連絡我們</h2>
+        <p>Email: example@company.com</p>
+        <p>電話: 02-1234-5678</p>
+    </section>
+
+    <footer>
+        <p>SHENG-TAI ELECTRICAL ENGINEERING CO., LTD.</p>
+    </footer>
+
+    <!-- 回到最上方按鈕 -->
+    <button id="backToTop">⬆ 回頂端</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

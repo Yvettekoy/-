@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>員工專區</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 登入檢查 -->
+    <script>
+        if(localStorage.getItem("loggedIn") !== "true") {
+            alert("請先登入！");
+            window.location.href = "login.html";
+        }
+    </script>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">🏢 公司名稱</div>
+            <ul class="nav-links">
+                <li><a href="index.html">回首頁</a></li>
+                <li><a href="#forms">表單下載</a></li>
+                <li><a href="#leave">請假系統</a></li>
+                <li><button id="logoutBtn">登出</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="home-section">
+        <h1>員工專區</h1>
+        <p>歡迎來到公司內部系統，您可以在此下載常用表單，或進入請假系統。</p>
+    </section>
+
+    <section id="forms" class="services-section">
+        <h2>表單下載</h2>
+        <ul class="download-list">
+            <li><a href="forms/請假單.pdf" download>📄 請假單</a></li>
+            <li><a href="forms/差旅報告.docx" download>📄 差旅報告</a></li>
+            <li><a href="forms/報銷單.xlsx" download>📄 報銷單</a></li>
+        </ul>
+    </section>
+
+    <section id="leave" class="contact-section">
+        <h2>請假系統</h2>
+        <p>🚧 開發中，敬請期待 🚧</p>
+    </section>
+
+    <footer>
+        <p>© 2025 公司名稱. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // 登出按鈕
+        const logoutBtn = document.getElementById("logoutBtn");
+        logoutBtn.addEventListener("click", () => {
+            localStorage.removeItem("loggedIn");
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+</html>
