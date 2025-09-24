@@ -5,36 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>聖鈦機電工程</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* 預設的 iframe 設定 */
-        .google-map-container {
-            position: relative;
-            width: 100%;
-            height: 0;
-            padding-top: 56.25%; /* 16:9 比例 */
-            overflow: hidden;
-        }
-
-        .google-map-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-
-        /* 手機響應式設計 */
-        @media screen and (max-width: 767px) {
-            .google-map-container {
-                padding-top: 60%; /* 調整高度比例來適應手機螢幕 */
-            }
-
-            .google-map-container iframe {
-                height: 200px; /* 降低高度 */
-            }
-        }
-    </style>
 </head>
 <body>
     <!-- 導覽列 -->
@@ -52,34 +22,37 @@
     </header>
 
     <!-- 首頁 -->
-    <section id="home" class="home-section">
-        <div class="slideshow-container">
-            <div class="slide fade">
-                <img src="img/img1.jpg" alt="公司照片1">
-            </div>
-            <div class="slide fade">
-                <img src="img/img2.jpg" alt="公司照片2">
-            </div>
-            <div class="slide fade">
-                <img src="img/img3.jpg" alt="公司照片3">
-            </div>
-
-            <!-- 左右箭頭 -->
-            <a class="prev">&#10094;</a>
-            <a class="next">&#10095;</a>
+    <!-- 首頁 -->
+<section id="home" class="home-section">
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="img/img1.jpg" alt="公司照片1">
+        </div>
+        <div class="slide fade">
+            <img src="img/img2.jpg" alt="公司照片2">
+        </div>
+        <div class="slide fade">
+            <img src="img/img3.jpg" alt="公司照片3">
         </div>
 
-        <!-- 點點指示器 -->
-        <div class="dot-container">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
+        <!-- 左右箭頭 -->
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
 
-        <h1 class="company-name">電力高低壓系統工程/儀錶控制系統工程</h1>
-        <p class="intro-text">著重安全第一、團隊服務及品質優先。</p>
-    </section>
+    <!-- 點點指示器 -->
+    <div class="dot-container">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
 
+    <h1 class="company-name">電力高低壓系統工程/儀錶控制系統工程</h1>
+    <p class="intro-text">著重安全第一、團隊服務及品質優先。</p>
+</section>
+
+
+    <!-- 服務項目 -->
     <!-- 服務項目 -->
     <section id="services" class="services-section hidden">
         <h2>服務項目</h2>
@@ -115,15 +88,11 @@
         </div>
     </div>
 
+
     <!-- 連絡我們 -->
     <section id="contact" class="contact-section hidden">
         <h2>連絡我們</h2>
-
-        <!-- Google 地圖嵌入 -->
-        <div class="google-map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.3924744363385!2d120.26284810000001!3d23.2651847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e8727d02047ef%3A0xcf1b337bd3f92994!2z6IGW6Yim5qmf6Zu75bel56iL5pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1758727033858!5m2!1szh-TW!2stw" 
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.3924744363385!2d120.26284810000001!3d23.2651847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e8727d02047ef%3A0xcf1b337bd3f92994!2z6IGW6Yim5qmf6Zu75bel56iL5pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1758727033858!5m2!1szh-TW!2stw"  width="50%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe>
 
         <p>電話: 06-6565466</p>
     </section>
