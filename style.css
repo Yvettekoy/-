@@ -118,9 +118,39 @@ button:hover { background:#2563eb; }
 .show { opacity:1; transform:translateY(0); }
 
 /* ========= 響應式 (漢堡選單) ========= */
+/* ========= 響應式 (漢堡選單) ========= */
 @media(max-width:768px){
-    .nav-links { flex-direction:column; position:absolute; top:60px; right:-100%; background:#1e3a8a; width:200px; transition: right 0.3s; padding:10px; border-radius:0 0 8px 8px;}
-    .nav-links.active { right:0; }
-    .menu-toggle { display:block; }
-    .nav-links li { margin:10px 0; }
+    /* 導覽列選單 */
+    .nav-links {
+        flex-direction: column;
+        position: fixed;      /* 固定在螢幕 */
+        top: 60px;            /* 從 navbar 下方開始 */
+        right: 0;             /* 固定右側 */
+        transform: translateX(100%); /* 初始完全隱藏 */
+        background: #1e3a8a;
+        width: 200px;
+        height: 100vh;        /* 高度佔滿整個螢幕 */
+        transition: transform 0.3s ease;
+        padding: 20px;
+        z-index: 9999;
+        overflow-y: auto;     /* 避免內容超出 */
+    }
+
+    /* 點擊漢堡滑出 */
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    /* 漢堡按鈕顯示 */
+    .menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    /* 選單項目間距 */
+    .nav-links li {
+        margin: 15px 0;
+    }
 }
+
